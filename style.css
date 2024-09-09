@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* CSS for Cat Example */
+.container{
+    background: rgb(42, 39, 39);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    background: white;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+.box button{
+    padding: 6px 20px;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 7px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+#off-btn{
+    background-color: red;
+    cursor: pointer;
+}
+#on-btn{
+    background-color: gray;
+    cursor: no-drop;
+}
+/* CSS for Number Guess  */
+.parent{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image:linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.7)),url("https://cdn.pixabay.com/photo/2014/03/27/09/41/mathematics-299384_1280.jpg");
+}
+input{
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.parent h1{
+    color:rgb(0, 251, 255);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:600px){
+    .container{
+        background: rgb(42, 39, 39);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        background: white;
+        text-align: center;
+        padding: 20px 30px;
+        border-radius: 10px;
+        width: 250px;
+    }
+
+    input{
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: 800;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .parent h1{
+        color:rgb(0, 251, 255);
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Example</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body> 
+
+    <!-- Cat Example -->
+
+    <div class="container">
+        <img id="bulb-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png" alt="bulb" width="100px">
+        <img id="cat-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png" width="200px" alt="cat">
+        <div class="box">
+            <h1 id="status">Switch On</h1>
+            <button type="button" id="on-btn" onclick="onBulb()">On</button>
+            <button type="button" id="off-btn" onclick="offBulb()">Off</button>
+        </div>
+    </div>
+    
+    <!-- Number Guess -->
+    <div class="parent">
+        <form>
+            <input type="search" name="NumberGuess" id="user-input">
+            <input type="button" value="Check" onclick="checkValue()">
+        </form>
+        <h1 id="status1">Guess the Number between 1-100</h1>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
