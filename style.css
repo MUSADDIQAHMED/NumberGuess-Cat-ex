@@ -59,14 +59,14 @@ input{
     font-weight: bolder;
 }
 .warndiv{
-    height: 100vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 927px;
-    right: 650px;
+    top: 890px;
+    right: 450px;
     display: none;
 }
 .warndiv img{
