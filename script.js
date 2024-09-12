@@ -35,24 +35,32 @@
        let randomNumber=Math.round(Math.random()*100);
        let liveStatus1=document.getElementById("status1")
 
+       let popupMsg=document.querySelector(".warndiv")
+       let value=0;
+
+
        function checkValue(){
-           let userInput=(document.getElementById("user-input").value);
-           console.log(randomNumber)
-           
-           if(userInput>randomNumber){
-               liveStatus1.textContent="Value too high 📈"
-               liveStatus1.style.color="orange"
-           }
-           else if(userInput<randomNumber){
-               liveStatus1.textContent="Value too low 📉"
-               liveStatus1.style.color="skyblue"
-           }
-           else if(userInput==randomNumber){
-               liveStatus1.textContent="Congrats🎉, you guessed right 🚀"
-               liveStatus1.style.color="yellowgreen"
-           }
-           else{
-               liveStatus1.textContent="Please, enter a valid input! "
-               liveStatus1.style.color="red"
-           }
+           let userInput=(document.getElementById("user-input").value); 
+           if(value < 5){
+                if(userInput>randomNumber){
+                    liveStatus1.textContent="Value too high 📈"
+                    liveStatus1.style.color="orange"
+                }
+                else if(userInput<randomNumber){
+                    liveStatus1.textContent="Value too low 📉"
+                    liveStatus1.style.color="skyblue"
+                }
+                else if(userInput==randomNumber){
+                    liveStatus1.textContent="Congrats🎉, you guessed right 🚀"
+                    liveStatus1.style.color="yellowgreen"
+                }
+                else{
+                    liveStatus1.textContent="Please, enter a valid input! "
+                    liveStatus1.style.color="red"
+                }
+            value=value+1;
+        }
+        else{
+            popupMsg.style.display="flex";
+        }
        }

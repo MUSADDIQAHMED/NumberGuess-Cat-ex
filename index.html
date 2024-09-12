@@ -21,13 +21,24 @@
     </div>
     
     <!-- Number Guess -->
-    <div class="parent">
-        <form>
-            <input type="search" name="NumberGuess" id="user-input">
-            <input type="button" value="Check" onclick="checkValue()">
-        </form>
-        <h1 id="status1">Guess the Number between 1-100</h1>
-    </div>
+     <div class="close">
+        <div class="parent">
+            <form>
+                <input type="search" name="NumberGuess" id="user-input">
+                <input type="button" value="Check" onclick="checkValue()">
+            </form>
+            <h1 id="status1">Guess the Number between 1-100</h1>
+        </div>
+    
+        <div class="warndiv">
+             <img src="./images-removebg-preview.png" alt="err">
+             <div class="message">
+                <h1>Maximum Attempts Reached!!!</h1>
+                <h1>Refresh page and Try again</h1>
+             </div>
+        </div>  
+    
+     </div>
 
     <script src="./script.js"></script>
 </body>
